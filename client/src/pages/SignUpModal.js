@@ -45,28 +45,16 @@ export default function SignUpModal({ signUpModalOff }) {
   return (
     <div>
       <div className="modal" id="signUpModal">
-        <div className="close-btn" onClick={signUpModalOff}>
-          x
-        </div>
+        <div className="close-btn" onClick={signUpModalOff}> x </div>
         <h3 className="singup-btn">SING UP</h3>
         <fieldset>
           <input className="modal-list" type="text" placeholder="Email" onChange={inputValue('email')}></input>
         </fieldset>
         <fieldset>
-          <input
-            className="modal-list"
-            type="password"
-            placeholder="password"
-            onChange={inputValue('password')}
-          ></input>
+          <input className="modal-list" type="password" placeholder="password" onChange={inputValue('password')} ></input>
         </fieldset>
         <fieldset>
-          <input
-            className="modal-list"
-            type="password"
-            placeholder="password confirm"
-            onChange={inputValue('passwordCheck')}
-          ></input>
+          <input className="modal-list" type="password" placeholder="password confirm" onChange={inputValue('passwordCheck')}></input>
         </fieldset>
         <fieldset>
           <input className="modal-list" type="text" placeholder="Name" onChange={inputValue('userName')}></input>
@@ -78,10 +66,9 @@ export default function SignUpModal({ signUpModalOff }) {
           <input className="modal-list" type="text" placeholder="Phone" onChange={inputValue('phone')}></input>
         </fieldset>
         <button className="modal-btn" onClick={handleSignup}>가입하기</button>
-      <div className="button" onClick={signUpModalOff}>
-        닫기
-      </div>
+       <div className="button" onClick={signUpModalOff}>닫기 </div>
       <div className="blur"></div>
+    </div>
     </div>
   );
 }
