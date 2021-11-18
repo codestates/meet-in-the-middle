@@ -7,11 +7,10 @@ import userInfo from "../dummy";
 import ListUpMapDiv from "./ListUpMapDiv";
 import menuModal from "./menuModal";
 const { kakao } = window;
-//import axios from "axios";
 
 //axios.defaults.withCredentials = true;
 
-export default function MapPage({ logo }) {
+export default function MapPage({ logo, userinfo }) {
   //console.log(props);
   let curDeg = [37.365264512305174, 127.10676860117488];
   const [curAdd, setCurAdd] = useState("");
@@ -73,6 +72,7 @@ export default function MapPage({ logo }) {
   const togle = (e) => {
     console.log(e);
   };
+
   return (
     <div className="main">
       {/* <button onClick={testBtn}>주소 불러오기</button> */}
