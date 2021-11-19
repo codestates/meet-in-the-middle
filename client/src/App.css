@@ -665,3 +665,7 @@ fieldset {
   color: white;
   width: 4.5em;
 }
+
+#logOutBtn {
+  cursor: pointer;
+}
