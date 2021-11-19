@@ -60,9 +60,7 @@ export default function SignUpModal({ signUpModalOff }) {
   return (
     <div>
       <div className="modal" id="signUpModal">
-        <div className="close-btn" onClick={signUpModalOff}>
-          x
-        </div>
+        <div className="close-btn" onClick={signUpModalOff}> x </div>
         <h3 className="singup-btn">SING UP</h3>
         <fieldset>
           <input
@@ -85,7 +83,6 @@ export default function SignUpModal({ signUpModalOff }) {
             className="modal-list"
             type="password"
             placeholder="password confirm"
-            onChange={inputValue("passwordCheck")}
           ></input>
         </fieldset>
         <fieldset>
@@ -102,6 +99,14 @@ export default function SignUpModal({ signUpModalOff }) {
             type="text"
             placeholder="Nick name"
             onChange={inputValue("nickName")}
+          ></input>
+        </fieldset>
+        <fieldset>
+          <input
+            className="modal-list"
+            type="text"
+            placeholder="Birth"
+            onChange={inputValue("birth")}
           ></input>
         </fieldset>
         <fieldset>
